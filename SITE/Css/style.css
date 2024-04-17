@@ -1,0 +1,91 @@
+body {
+  background-color: rebeccapurple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+form {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 100px;
+  width: 250px;
+  height: 400px;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 255);
+  border-radius: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello h1 {
+  text-align: center;
+  padding: 20px 0 10px;
+  color: aliceblue;
+  margin-top: -200px;
+}
+
+.form-control {
+  border-radius: 50px;
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  margin-top: 10px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 30px;
+  color: aliceblue;
+}
+.live {
+  position: absolute;
+  right: 0;
+  background: transparent;
+  border-radius: 40px;
+  height: 40px;
+  color: aliceblue;
+  bottom: -50px;
+}
+.arrangement {
+  position: relative;
+}
+.bx bxs-user {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.text-center {
+  color: aliceblue;
+  margin-left: -80px;
+  position: absolute;
+  bottom: -180px;
+}
+.allo {
+  color: aliceblue;
+
+  text-align: center;
+}
+
+.fa-solid {
+  position: absolute;
+  color: aliceblue;
+  top: 40%;
+  left: 3%;
+}
+.guitar {
+  position: relative;
+  line-height: 50px;
+}
+.text-center a {
+  color: aqua;
+}

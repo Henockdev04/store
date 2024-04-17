@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .mama {
+        width: 1100px;
+        height: 500px;
+        background-color: rgb(117, 182, 247);
+        display: grid;
+        grid-template-columns: 34% 33% 33%;
+        grid-template-rows: 100%;
+      }
+      .mama .bebe {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+        align-items: center;
+        border-right: 2px solid #00000030;
+      }
+      .mama .bebe .mamy {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-sizing: border-box;
+        padding: 0 20px;
+        align-items: end;
+      }
+      .mama .bebe .mamy h1 {
+        font-weight: 900;
+        color: black;
+        font-size: larger;
+      }
+      .mama .bebe .mamy h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 160px;
+      }
+      .mama .bebe #si h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 350px;
+      }
+      .mama .bebe #do h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 255px;
+      }
+      .mama .bebe #re h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 285px;
+      }
+      .mama .bebe #mi h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 245px;
+      }
+      .mama .bebe #fa h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 210px;
+      }
+      .mama .bebe #sol h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 225px;
+      }
+      .mama .bebe #la h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 205px;
+      }
+      .mama .bebe #ra h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 230px;
+      }
+      .mama .bebe #ri h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 205px;
+      }
+
+      .mama .bebe #ro h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: larger;
+        width: 170px;
+      }
+
+      .mama .tonton {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 60% 20%;
+        border-right: 2px solid #00000030;
+      }
+      .mama .tonton .cache {
+        text-align: center;
+      }
+      .mama .tonton .cache h1 {
+        font-size: larger;
+      }
+      .mama .tonton .papa {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mama .papa h1 {
+        font-weight: 900;
+        color: black;
+        font-size: larger;
+      }
+      .mama .tonton .tata {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .mama .tata .dady {
+        width: 60%;
+        height: 90%;
+        border: 5px solid black;
+      }
+      .mama .tonton .tata .dady .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+      .mama .table {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mama .table .surtable {
+        width: 80%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+        grid-template-rows: 100%;
+      }
+      .mama .table .surtable .tab {
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+        justify-items: center;
+        align-items: center;
+        border-right: 1px solid black;
+      }
+      .mama .table .surtable .tab div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid black;
+      }
+      .mama .table .surtable .tab h1 {
+        font-size: larger;
+        transform: rotate(270deg);
+      }
+      .mama .table .surtable #be,
+      #ba {
+        border-right: 6px solid black;
+      }
+      .mama .table .surtable #be {
+        position: relative;
+      }
+      .mama .table .surtable #be h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(270deg);
+        width: max-content;
+      }
+      .mama .table .surtable .tab .borde {
+        border-bottom: none;
+      }
+
+      /*-------------------back carte*****************************/
+
+      .mama1 {
+        width: 1100px;
+        height: 500px;
+        background-color: rgb(117, 182, 247);
+        display: grid;
+        grid-template-columns: 34% 33% 33%;
+        grid-template-rows: 100%;
+      }
+      .mama1 {
+        width: 1100px;
+        height: 500px;
+        background-color: rgb(117, 182, 247);
+        display: grid;
+        grid-template-columns: 34% 33% 33%;
+        grid-template-rows: 100%;
+      }
+      .mama1 .info {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 14% 14% 14% 14% 14% 28%;
+        align-items: center;
+        border-right: 2px solid #00000030;
+      }
+      .mama1 .info .idInfo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-sizing: border-box;
+        padding: 0 20px;
+      }
+      .mama1 .info .idInfo #rep {
+        border-bottom: 3px solid black;
+      }
+      .mama1 .info .idInfo #nom {
+        border: 5px solid black;
+        font-size: 22px;
+        padding: 10px;
+      }
+
+      .mama1 .info .idInfo h1 {
+        font-weight: 900;
+        color: black;
+        font-size: x-large;
+      }
+      .mama1 .info .idInfo h2 {
+        color: rgb(0 0 0 / 77%);
+        border-bottom: 2px dashed black;
+        font-size: x-large;
+      }
+      .mama1 .info #double {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 20%;
+      }
+      .mama1 .info #double div {
+        display: flex;
+        gap: 10px;
+      }
+      .mama1 .info #double #admin {
+        height: 100%;
+        display: flex;
+        width: 100%;
+        border-bottom: 2px dashed black;
+        justify-content: center;
+      }
+      .mama1 .info #double div h2 {
+        font-size: larger;
+      }
+      .mama1 .tonton {
+        display: grid;
+        border-right: 2px solid #00000030;
+      }
+
+      .mama1 .table {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mama1 .table .surtable {
+        width: 80%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+        grid-template-rows: 100%;
+      }
+      .mama1 .table .surtable .tab {
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+        justify-items: center;
+        align-items: center;
+        border-right: 1px solid black;
+      }
+      .mama1 .table .surtable .tab div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid black;
+      }
+      .mama1 .table .surtable .tab h1 {
+        font-size: larger;
+        transform: rotate(270deg);
+      }
+      .mama1 .table .surtable #be,
+      #ba {
+        border-right: 6px solid black;
+      }
+      .mama1 .table .surtable #be {
+        position: relative;
+      }
+      .mama1 .table .surtable #be h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(270deg);
+        width: max-content;
+      }
+      .mama1 .table .surtable .tab .borde {
+        border-bottom: none;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mama">
+      <div class="bebe">
+        <div class="mamy" id="do">
+          <h1>IZINA :</h1>
+          <h2></h2>
+        </div>
+        <div class="mamy">
+          <h1>AMATAZIRANO :</h1>
+          <h2></h2>
+        </div>
+        <div class="mamy" id="si">
+          <h2></h2>
+        </div>
+        <div class="mamy" id="re">
+          <h1>SE :</h1>
+          <h2></h2>
+        </div>
+        <div class="mamy" id="mi">
+          <h1>NYINA :</h1>
+          <h2></h2>
+        </div>
+        <div class="mamy" id="fa">
+          <h1>PROVENSI :</h1>
+          <h2></h2>
+        </div>
+        <div class="mamy" id="sol">
+          <h1>KOMINE :</h1>
+          <h2></h2>
+        </div>
+        <div class="mamy" id="la">
+          <h1>YAVUKIYE :</h1>
+          <h2></h2>
+        </div>
+        <div class="mamy" id="ra">
+          <h1>ITALIKI :</h1>
+          <h2></h2>
+        </div>
+        <div class="mamy" id="ri">
+          <h1>ARUBATSE :</h1>
+          <h2></h2>
+        </div>
+        <div class="mamy" id="ro">
+          <h1>AKAZI AKORA :</h1>
+          <h2></h2>
+        </div>
+      </div>
+      <div class="tonton">
+        <div class="papa">
+          <h1>IGIKUMU CA NYENEYO</h1>
+        </div>
+        <div class="tata">
+          <div class="dady">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cache">
+          <h1>IKASHE</h1>
+        </div>
+      </div>
+      <div class="table">
+        <div class="surtable">
+          <div class="tab" id="be">
+            <h1>AHO Y'IKWIRIKIRANIJE KUBA</h1>
+          </div>
+          <div class="tab" id="ba">
+            <div><h1>ITALIKI</h1></div>
+            <div><h1>UMUSOZI</h1></div>
+            <div><h1>KOMINE</h1></div>
+            <div class="borde"><h1>PROVENSI</h1></div>
+          </div>
+          <div class="tab">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="borde"></div>
+          </div>
+          <div class="tab">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="borde"></div>
+          </div>
+          <div class="tab">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="borde"></div>
+          </div>
+          <div class="tab">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="borde"></div>
+          </div>
+          <div class="tab">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="borde"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mama1">
+      <div class="info">
+        <div class="idInfo">
+          <h1 id="rep">REPUBLIQUE DU BURUNDI</h1>
+        </div>
+        <div class="idInfo">
+          <h1 id="nom">IKARATA KARANGAMUNTU</h1>
+        </div>
+        <div class="idInfo">
+          <h1>N° MIFPDL</h1>
+          <h2>08031/160.119</h2>
+        </div>
+        <div class="idInfo">
+          <h1>ITANGIWE</h1>
+          <h2>BUJUMBURA</h2>
+        </div>
+        <div class="idInfo">
+          <h1>ITALIKI</h1>
+          <h2>27/03/2024</h2>
+        </div>
+        <div class="idInfo" id="double">
+          <div>
+            <h1>UWUYITANZE</h1>
+            <h2>MUSITANTERI</h2>
+          </div>
+          <div id="admin">
+            <h2>MPFAYOKURERA Emmanuel</h2>
+          </div>
+        </div>
+      </div>
+      <div class="tonton"></div>
+      <div class="table">
+        <div class="surtable">
+          <div class="tab" id="be">
+            <h1>AHO Y'IKWIRIKIRANIJE KUBA</h1>
+          </div>
+          <div class="tab" id="ba">
+            <div><h1>ITALIKI</h1></div>
+            <div><h1>UMUSOZI</h1></div>
+            <div><h1>KOMINE</h1></div>
+            <div class="borde"><h1>PROVENSI</h1></div>
+          </div>
+          <div class="tab">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="borde"></div>
+          </div>
+          <div class="tab">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="borde"></div>
+          </div>
+          <div class="tab">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="borde"></div>
+          </div>
+          <div class="tab">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="borde"></div>
+          </div>
+          <div class="tab">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="borde"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

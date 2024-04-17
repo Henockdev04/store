@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+       .henock{
+        flex-direction: column;
+        display: flex;
+       }
+       .henock input{
+        height: 30px;
+        width: 500px;
+       }
+       body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:rgba(0,0,0,0.5);
+       }
+       .tete{
+        width: 500px;
+       }
+       .bita{
+        position: relative;
+       }
+       .live{
+        position: absolute;
+        width: 200px;
+        height: 60px;
+        border-radius: 10px;
+        left: 130px;
+        background-color: rgba(0,0,0,0.6);
+        color: white;
+       }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<form method="POST" action = "info2.php">
+<body>
+    <div class ="tete">
+    <h1>Formulaire de demande d'identité complete</h1>
+</div>
+    <div class ="henock">
+        <label for ="nom"> Nom </label>
+        <input type= "text" id = "nom" class = "nom" name ="nom" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="prenom"> Prenom </label>
+        <input type= "text" id = "prenom" class = "prenom" name ="prenom" required><br><br>
+    </div>
+      <div class ="henock">
+        <label for ="datenaissance"> Date de naissance </label>
+        <input type= "date" id = "datenaissance" class = "datenaissance" name ="datenaissance" required><br><br>
+    </div>
+       <div class = "henock">
+        <label for ="genre"> Genre </label>
+        <input type= "text" id = "genre" class = "genre" name ="genre" required><br><br>
+    </div>
+      <div class = "henock">
+        <label for ="situationm"> Situation Matrimoniale</label>
+        <input type= "text" id = "situationm" class = "situationm" name ="situationm" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="tdd"> Type demande document</label>
+        <input type= "text" id = "tdd" class = "tdd" name ="tdd" required><br><br>
+    </div>
+     <div class ="henock">
+        <label for ="telephone"> Telephone</label>
+        <input type= "number" id = "telephone" class = "telephone" name ="telephone" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="profession"> Profession </label>
+        <input type= "text" id = "profession" class = "profession" name ="profession" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="lieunaissance"> Lieu de naissance(Ville) </label>
+        <input type= "text" id = "lieunaissance" class = "lieunaissance" name ="lieunaissance" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="province"> Province </label>
+        <input type= "text" id = "province" class = "province" name ="province" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="commune"> Commune </label>
+        <input type= "text" id = "commune" class = "commune" name ="commune" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="colline"> Colline </label>
+        <input type= "text" id = "colline" class = "colline" name ="colline" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="residencea"> Résidence actuelle</label>
+        <input type= "text" id = "residencea" class = "residencea" name ="residencea" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="nomp"> Nom du père </label>
+        <input type= "text" id = "nomp" class = "nomp" name ="nomp" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="prenomp"> Prenom du père </label>
+        <input type= "text" id = "prenomp" class = "prenomp" name ="prenomp" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="nomm"> Nom de la mère </label>
+        <input type= "text" id = "nomm" class = "nomm" name ="nomm" required><br><br>
+    </div>
+    <div class ="henock">
+        <label for ="prenomm"> Prenom de la mère </label>
+        <input type= "text" id = "prenomm" class = "prenomm" name ="prenomm" required><br><br>
+    </div>
+        <div class ="henock">
+            <label for ="nationalite"> Nationalité </label>
+            <input type= "text" id = "nationalite" class = "nationalite" name ="nationalite" required><br><br>
+            </div>
+    
+    <div class ="henock">
+        <label for ="dated"> Date à laquelle vous avez demandé le document</label>
+        <input type= "date" id = "dated" class = "dated" name ="dated" required><br><br>
+
+    </div>
+    <div class ="henock"> 
+        <label for ="dated"> Lieu à laquelle vous avez demandé le document</label>
+        <input type= "text" id = "lieud" class = "lieud" name ="lieud" required><br><br>
+    </div>
+    <div class ="bita">
+        <input type="submit" id="live" class = "live" name="live" value="Envoyer la demande">
+    </div>
+    </form>
+    
+</body>
+<script src="JS/storage.js"></script>
+</html>

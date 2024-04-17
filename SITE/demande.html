@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        object-fit: cover;
+        z-index: 0;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      .title {
+        width: 800px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 5px solid rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: relative;
+      }
+      .title h2 {
+        font-size: medium;
+        font-weight: 600;
+        color: aliceblue;
+        font-family: sans-serif;
+        border-bottom: 2px solid white;
+        padding: 10px;
+        position: absolute;
+        top: 1px;
+      }
+      .title ul {
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        left: 90px;
+        bottom: -105px;
+      }
+      .title ul li {
+        padding: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 40px;
+        width: 500px;
+        list-style-type: none;
+      }
+      .title ul li:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border-radius: 10px;
+      }
+      .title ul li:hover a {
+        color: white;
+      }
+      .title ul li a {
+        text-decoration: none;
+        font-size: medium;
+        font-weight: 600;
+        color: aliceblue;
+        font-family: sans-serif;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="title">
+      <h2>Les documents que vous pouvez recevoir</h2>
+      <ul>
+        <li>
+          <a class="link" href="info1.html">Carte d' identite nationale </a>
+        </li>
+        <li><a class="link" href="info2.html">Identite complete </a></li>
+        <li><a class="link" href="info3.html">Extrait de mariage </a></li>
+        <li>
+          <a class="link" href="info4.html"
+            >Attestation de bonne conduite: vie et moeurs et civisme</a
+          >
+        </li>
+        <li><a class="link" href="info5.html"> Casier judisiaire </a></li>
+        <li>
+          <a class="link" href="info6.html"> Attestation de residence </a>
+        </li>
+        <li><a class="link" href="info7.html">Attestation de decès </a></li>
+        <li>
+          <a class="link" href="info8.html"> Extrait d'acte de naissance </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script src="JS/storage.js"></script>
+</html>

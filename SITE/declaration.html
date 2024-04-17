@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        position: relative;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+      }
+      .tete {
+        width: 1200px;
+        height: 100%;
+      }
+
+      img {
+        width: 60px;
+        height: 58px;
+        margin-left: 40px;
+      }
+      .titi {
+        font-size: 6px;
+      }
+      .tete .titi #mimi {
+        margin-top: 20px;
+        border-bottom: 2px solid black;
+        width: max-content;
+        margin-left: 140px;
+      }
+      .titi #tata {
+        flex-direction: row;
+        display: flex;
+        gap: 20px;
+        border-bottom: 2px solid black;
+        width: max-content;
+      }
+      .titi #toto {
+        flex-direction: row;
+        display: flex;
+        gap: 10px;
+      }
+
+      .tete .para {
+        margin-top: 20px;
+        width: 580px;
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        text-indent: 6em;
+        font-size: 6px;
+      }
+      .infoto #se {
+        display: flex;
+        flex-direction: row;
+        gap: 28px;
+      }
+      .infoto #sa {
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+      }
+      .infoto #si {
+        display: flex;
+        flex-direction: row;
+        gap: 44px;
+      }
+      .infoto #sow {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .infoto #fa {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+      }
+      .infoto #po {
+        display: flex;
+        flex-direction: row;
+        gap: 172px;
+      }
+      .infoto #su {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+      }
+      .infoto #so {
+        display: flex;
+        flex-direction: row;
+        gap: 71px;
+      }
+      .infoto #pe {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .infoto #be {
+        display: flex;
+        flex-direction: row;
+        gap: 96px;
+      }
+      .infoto #ba {
+        display: flex;
+        flex-direction: row;
+        gap: 62px;
+      }
+      .infoto #bi {
+        display: flex;
+        flex-direction: row;
+        gap: 51px;
+      }
+      .infoto #zo {
+        display: flex;
+        flex-direction: row;
+        gap: 173px;
+      }
+      .infoto #ze {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .infoto #bu {
+        display: flex;
+        flex-direction: row;
+        gap: 54px;
+      }
+      .infoto #bo {
+        display: flex;
+        flex-direction: row;
+        gap: 21px;
+      }
+      .infoto #ko {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+      }
+
+      .infoto {
+        margin-top: 20px;
+        display: flex;
+        row-gap: 6px;
+        flex-direction: column;
+        font-size: 6px;
+      }
+
+      .sign {
+        margin-top: 15px;
+        width: 570px;
+
+        font-size: 6px;
+      }
+      .sasa {
+        margin-top: 20px;
+        margin-left: 240px;
+        font-size: 6px;
+      }
+      .ceni {
+        margin-top: 15px;
+        margin-left: 310px;
+        font-size: 6px;
+      }
+      .ceci {
+        margin-top: 15px;
+        margin-left: 260px;
+        font-size: 6px;
+      }
+      .signe {
+        margin-top: 15px;
+        width: 570px;
+
+        font-size: 6px;
+      }
+      .signe1 {
+        margin-top: 7px;
+
+        margin-left: 260px;
+        font-size: 6px;
+      }
+      .signe2 {
+        margin-top: 7px;
+
+        margin-left: 260px;
+        font-size: 6px;
+      }
+      .signe3 {
+        margin-top: 12px;
+        width: 230px;
+        margin-left: 260px;
+        font-size: 6px;
+      }
+      .signe4 {
+        margin-top: 7px;
+        width: 250px;
+        margin-left: 260px;
+        font-size: 6px;
+      }
+      .signe5 {
+        margin-top: 40px;
+        width: 160px;
+        margin-left: 310px;
+        font-size: 6px;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>identité complete</title>
+  </head>
+  <body>
+    <div class="tete">
+      <div class="titi">
+        <div class="momo">
+          <h1>REPUBLIQUE DU BURUNDI</h1>
+        </div>
+        <img id="bg" src="tete.jpg" alt="" />
+        <div class="momo">
+          <h1>POLICE NATIONALE DU BURUNDI</h1>
+        </div>
+
+        <div class="momo" id="tata">
+          <h1>COMMISSARIAT GENERAL DE LA POLICE JUDISIAIRE</h1>
+        </div>
+        <div class="momo" id="mimi">
+          <h1>DECLARATION</h1>
+        </div>
+      </div>
+      <div class="para">
+        <h1>Je soussigné</h1>
+      </div>
+      <div class="infoto">
+        <div class="info" id="se">
+          <h1>Nom et Prénom</h1>
+          <h1>:</h1>
+        </div>
+        <div class="info" id="sa">
+          <h1>Né(e) le</h1>
+          <h1>:</h1>
+        </div>
+        <div class="info" id="fa">
+          <div class="info" id="si">
+            <h1>Fils(Fille) de</h1>
+            <h1>:</h1>
+          </div>
+          <div class="info" id="sow">
+            <h1>et de</h1>
+            <h1>:</h1>
+          </div>
+        </div>
+        <div class="info" id="su">
+          <h1>Orginaire de</h1>
+        </div>
+        <div class="info" id="po">
+          <div class="info" id="so">
+            <h1>Colline</h1>
+            <h1>:</h1>
+          </div>
+          <div class="info" id="pe">
+            <h1>Commune</h1>
+            <h1>:</h1>
+          </div>
+        </div>
+
+        <div class="info" id="ba">
+          <h1>Province</h1>
+          <h1>:</h1>
+        </div>
+        <div class="info" id="zo">
+          <div class="info" id="bi">
+            <h1>Nationalité</h1>
+            <h1>:</h1>
+          </div>
+          <div class="info" id="ze">
+            <h1>Profession</h1>
+            <h1>:</h1>
+          </div>
+        </div>
+        <div class="info" id="bu">
+          <h1>Résident à</h1>
+          <h1>:</h1>
+        </div>
+        <div class="info" id="bo">
+          <h1>Nom du conjoint</h1>
+          <h1>:</h1>
+        </div>
+        <div class="info" id="ko">
+          <h1>Célibataire</h1>
+          <h1>:</h1>
+        </div>
+      </div>
+      <div class="sign">
+        <h1>
+          Certifié sur l'honneur n'avoir a ce jour encouru aucune condamnation
+          ni au territoire de la République du Burundi ni à l'étranger.
+        </h1>
+      </div>
+
+      <div class="sasa">
+        <h1>
+          <b>BUJUMBURA</b>
+          le <b>...../...../2024</b>
+        </h1>
+      </div>
+      <div class="ceni">
+        <h1>Signature</h1>
+      </div>
+      <div class="ceci">
+        <h1>ATTESTATION</h1>
+      </div>
+      <div class="signe">
+        <h1>
+          Je soussigne <b>MANIRAKIZA Léonard</b> Procureur Général de la
+          République du Burundi à <b>BUJUMBURA</b>
+          après avoir consulté la documentation à notre prossession
+        </h1>
+      </div>
+      <div class="signe">
+        <h1>
+          Certifions que le (la) susnommé(e) n'a à autre connaissance encouru
+          aucune condamnation durant son séjour dans la République du Burundi
+        </h1>
+      </div>
+      <div class="signe1">
+        <h1>Casier judisiaire</h1>
+      </div>
+      <div class="signe1">
+        <h1>Antécédent judisiaire :</h1>
+      </div>
+      <div class="signe2">
+        <h1><b>BUJUMBURA</b> Le <b>...../...../2024</b></h1>
+      </div>
+      <div class="signe3">
+        <h1>Le Procureur Général de la République du Burundi par délégation</h1>
+      </div>
+      <div class="signe4">
+        <h1>Le Commissaire Général de la Police judisiaire</h1>
+      </div>
+      <div class="signe5">
+        <h1><b>NDIKUMWAMI Roger Général Major de la Police</b></h1>
+      </div>
+    </div>
+  </body>
+</html>

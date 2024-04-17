@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        padding: 10px 90px;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.6);
+        border-bottom: 1px solid #fff;
+      }
+
+      nav .logo {
+        padding: 22px 20px;
+        height: 80px;
+        float: left;
+        font-size: 27px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: black;
+        position: absolute;
+        left: 1px;
+        font-style: italic;
+      }
+
+      nav ul {
+        list-style: none;
+        float: right;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      nav ul li a {
+        line-height: 80px;
+        color: whitesmoke;
+        padding: 12px 30px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      nav ul li a:hover {
+        background: rgba(0, 0, 0, 0.7);
+      }
+      nav ul li ul.dropdown li {
+        display: flex;
+        height: 50px;
+      }
+      nav ul li ul.dropdown {
+        width: auto;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        z-index: 999;
+        display: none;
+        border-radius: 10px;
+        text-transform: lowercase;
+      }
+      nav ul li:hover ul.dropdown {
+        display: flex;
+        flex-direction: column;
+      }
+      nav ul li ul.dropdown li a {
+        text-transform: capitalize;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+      }
+      .keke h1 {
+        position: absolute;
+        color: burlywood;
+        font-size: 55px;
+        bottom: 280px;
+        right: 350px;
+        border-bottom: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 850px;
+        border: 5px solid black;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="bg" src="pay.jpg.jpg" alt="" />
+    <div class="keke">
+      <a href="demande.html"><h1>DEMANDES LES DOCUMENTS QUE VOUS VOULEZ</h1></a>
+    </div>
+    <nav>
+      <div class="logo">Merci d'utiliser E-citoyen</div>
+
+      <ul>
+        <li><a href="connexion.php">Se deconnecter</a></li>
+        <li><a href="propos.html">A propos</a></li>
+        <li>
+          <a href="">Services</a>
+          <ul class="dropdown">
+            <li><a href="demande.html"> Demande du document</a></li>
+            <li><a href="suivi.php"> Voir les documents demandes</a></li>
+            <li>
+              <a href="infosurdoc.html"> Information sur les documents </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="contact.php">Contact</a></li>
+      </ul>
+    </nav>
+    <section></section>
+  </body>
+  <script src="JS/storage.js"></script>
+</html>
